@@ -1,0 +1,80 @@
+body {
+    background-color: #121212;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 3rem;
+    color: #ffffff;
+}
+
+#dice {
+    font-size: 7rem;
+    margin: 5px;
+    color: white;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.roll-dice {
+    animation-name: roll;
+}
+
+@keyframes roll {
+    from {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+
+    to {
+        transform: rotateY(720deg) rotateX(720deg);
+    }
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0071eb;
+    transition: change 1s ease;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+li {
+    background-color: #1b1b1b;
+    margin: 10px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+li span {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
